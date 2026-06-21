@@ -1,0 +1,29 @@
+{
+  "name": "ai-resume-analyzer-root",
+  "version": "1.0.0",
+  "description": "Root package.json for AI Resume Analyzer (MERN Stack)",
+  "scripts": {
+    "backend": "cd backend && npm start",
+    "backend-dev": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm run dev",
+    "install-backend": "cd backend && npm install",
+    "install-frontend": "cd frontend && npm install",
+    "install-all": "npm run install-backend && npm run install-frontend",
+    "dev": "npx concurrently \"npm run backend-dev\" \"npm run frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+   "@react-oauth/google": "0.13.5",
+"axios": "1.16.1",
+"dotenv": "17.4.2",
+"google-auth-library": "10.6.2",
+"mongodb": "7.2.0",
+"mongoose": "9.6.2",
+"nodemailer": "8.0.7",
+"pdf-parse": "1.1.1",
+"react-google-recaptcha-v3": "1.11.0",
+"react-hot-toast": "2.6.0"
+  }
+}
